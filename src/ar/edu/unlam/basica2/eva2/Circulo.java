@@ -9,5 +9,23 @@ public class Circulo extends Figura {
 		
 	}
 
+	@Override
+	public Double calcularElArea() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Double calcularElPerimetro() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String dibujarFigura() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 	
 }
