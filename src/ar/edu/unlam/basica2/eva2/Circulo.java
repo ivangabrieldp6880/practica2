@@ -3,28 +3,36 @@ package ar.edu.unlam.basica2.eva2;
 import java.lang.Math;
 
 public class Circulo extends Figura {
+	
+	private double radio;
 
 	
-	public Circulo(double radio,String Color){
-		
+	public Circulo(double radio,String color){
+		super(color);
+		this.radio = radio;
 	}
 
 	@Override
 	public Double calcularElArea() {
-		// TODO Auto-generated method stub
-		return null;
+		Double areaCirculo;
+		
+		areaCirculo = Math.PI * Math.pow(radio, 2);
+		
+		return areaCirculo;
 	}
 
 	@Override
 	public Double calcularElPerimetro() {
-		// TODO Auto-generated method stub
-		return null;
+		Double perimetroCirculo;
+		
+		perimetroCirculo =  2 * Math.PI * radio;
+		
+		return perimetroCirculo;
 	}
 
 	@Override
 	public String dibujarFigura() {
-		// TODO Auto-generated method stub
-		return null;
+		return this.getClass().getName();
 	}
 
 	
